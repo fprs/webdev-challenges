@@ -1,0 +1,28 @@
+body>header{
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 3vh 0;
+	// background-color: red;
+	nav{
+		float: right;
+		line-height: 1.8em;
+		ul li{
+			padding: 0 0.5em;
+			text-transform: uppercase;
+			display: inline-block;
+		}
+	}
+}
+
+section#logo{
+	display: inline-block;
+	h1, i{
+		display: inline-block;
+		color: #333;
+	}
+	i{
+		color: mediumseagreen;
+		line-height: 1.8em;
+		vertical-align: top;
+	}
+}

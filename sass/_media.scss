@@ -1,0 +1,33 @@
+
+@media (max-width: 800px), handheld and (orientation: portrait) {
+	.box-little{
+		width: 40%;
+	}	
+	body>header {		
+		display: block;
+		width: 100%;
+		text-align: center;
+		nav{
+			float: none;	
+			ul{
+				padding-top: 2vh;
+			}
+		}
+	}
+}
+
+@media (max-width: 600px), handheld and (orientation: portrait) {
+	.box-little{
+		width: 70%;
+	}
+	h2{
+		font-size: 2.2em;
+	}
+	h3{
+		font-size: 1.6em;
+	}
+	section#latest .left-align, section#learn{
+		text-align: center;
+		margin: 0 auto;
+	}
+}

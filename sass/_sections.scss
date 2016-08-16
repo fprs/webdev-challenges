@@ -1,0 +1,130 @@
+$content-width: 900px;
+
+main>section{
+	text-align: center;	
+	overflow: auto;
+	padding: 10vh;
+	header{		
+		padding-bottom: 5vh;
+		p{
+			margin: 2vh auto;
+		}
+	}
+	>*{
+		max-width: $content-width;
+		margin: 2vh auto;
+	}
+	a.button-green{
+		display: block;
+		margin: 5vh auto;
+		width: 200px;
+		height: 50px;
+		border-radius: 25px;
+		background-color: mediumseagreen;
+		line-height: 50px;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+}
+
+section#portfolio{
+	@include section-image("../img/Background1.jpg", #ddd, #fff);
+	padding: 20vh 10vh;
+}
+
+section#services{
+	max-width: $content-width;
+	i{
+		font-size: 3em;
+	}
+	margin: 0 auto;
+}
+
+section#learn{
+	@include section-image("../img/sea.png", #ddd, #fff);
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),url("../img/sea.png") no-repeat center center;
+    background-size: cover;
+    padding: 10vh;
+    text-align: left;
+    header{
+    	padding-bottom: 5vh;
+    }
+    p{
+    	margin: 2vh auto;
+    }
+    a{
+    	display: inline-block;
+    	margin-left: 0;
+    	margin-right: 0;
+    	text-align: center;
+    }
+}
+
+section#latest{
+	.left-align{
+		text-align: left;;
+		>*{
+			margin: 2vh auto;
+		}
+		i{
+			@include icon(#000);
+		}
+		.align{
+			display: inline-block;
+			padding: 2vh;
+		}
+		h5{
+			text-transform: capitalize;
+		}
+		a{
+			display: inline-block;
+			margin: 2vh auto;
+			text-transform: uppercase;
+			color: mediumseagreen;
+			font-weight: bold;
+		}
+	}
+}
+
+section#culture{
+	background-color: #eee;
+	i{
+		@include icon(#444);
+	}
+}
+
+section#contact{
+	background-color: mediumseagreen;
+	color: white;
+	padding: 10vh;
+	h3{
+		color: white;
+	}
+	a{
+		display: block;
+		width:200px;
+		height: 50px;
+		border:3px solid white;
+		border-radius: 10px;
+		line-height: 50px;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin: 1em auto;
+	}
+}
+
+
+.box-little{
+	display: inline-block;
+	width: 25%;
+	margin: 3vh;
+	>*{
+		margin-top: 2vh;
+	}
+}
+
+
+

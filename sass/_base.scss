@@ -1,0 +1,45 @@
+$text-color: #333;
+$h-color: black;
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: $text-color;
+}
+
+h1, h2, h3, h4, h5, h6{
+	text-transform: uppercase;
+	color: $h-color;
+}
+
+h2{
+	font-size: 3.8em;
+}
+
+h3{
+	font-size: 2.4em;
+}
+
+h4{
+	font-size: 1.4em;
+}
+
+h5{
+	font-size: 1.2em;
+}
+
+em{
+	color: mediumseagreen;
+}
+
+ul.icon li{
+	&:before{
+		font-family: fontello;
+		content: '\e803';
+		display: inline-block;
+		border: 2px solid #ddd;
+		padding: 5px;
+		border-radius: 50%;
+		margin: 5px;
+		margin-right: 1em;
+	}
+}

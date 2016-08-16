@@ -1,0 +1,23 @@
+@mixin section-image($image-url, $text-color: #333, $h-color: #000) {	
+	// height: 100vh;
+	color: $text-color;
+	background: url($image-url) no-repeat center center;
+	background-size: cover;
+	// width: 100vw;
+	h2, h3, h4, h5, a{
+		color: $h-color;
+	}
+}
+
+@mixin icon($color:#000) {
+	display: inline-block;
+	font-size: 3em;
+	border: 3px solid $color;
+	width: 1.5em;
+	height: 1.5em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 0;
+	border-radius: 50%;
+	color: $color;
+}

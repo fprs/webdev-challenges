@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul, li {
+  list-style-type: none; }
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  color: black; }
+
+h2 {
+  font-size: 3.8em; }
+
+h3 {
+  font-size: 2.4em; }
+
+h4 {
+  font-size: 1.4em; }
+
+h5 {
+  font-size: 1.2em; }
+
+em {
+  color: mediumseagreen; }
+
+ul.icon li:before {
+  font-family: fontello;
+  content: '\e803';
+  display: inline-block;
+  border: 2px solid #ddd;
+  padding: 5px;
+  border-radius: 50%;
+  margin: 5px;
+  margin-right: 1em; }
+
+body > header {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3vh 0; }
+  body > header nav {
+    float: right;
+    line-height: 1.8em; }
+    body > header nav ul li {
+      padding: 0 0.5em;
+      text-transform: uppercase;
+      display: inline-block; }
+
+section#logo {
+  display: inline-block; }
+  section#logo h1, section#logo i {
+    display: inline-block;
+    color: #333; }
+  section#logo i {
+    color: mediumseagreen;
+    line-height: 1.8em;
+    vertical-align: top; }
+
+footer {
+  padding: 20px;
+  text-align: center; }
+
+main > section {
+  text-align: center;
+  overflow: auto;
+  padding: 10vh; }
+  main > section header {
+    padding-bottom: 5vh; }
+    main > section header p {
+      margin: 2vh auto; }
+  main > section > * {
+    max-width: 900px;
+    margin: 2vh auto; }
+  main > section a.button-green {
+    display: block;
+    margin: 5vh auto;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: mediumseagreen;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: bold; }
+
+section#portfolio {
+  color: #ddd;
+  background: url("../img/Background1.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 20vh 10vh; }
+  section#portfolio h2, section#portfolio h3, section#portfolio h4, section#portfolio h5, section#portfolio a {
+    color: #fff; }
+
+section#services {
+  max-width: 900px;
+  margin: 0 auto; }
+  section#services i {
+    font-size: 3em; }
+
+section#learn {
+  color: #ddd;
+  background: url("../img/sea.png") no-repeat center center;
+  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/sea.png") no-repeat center center;
+  background-size: cover;
+  padding: 10vh;
+  text-align: left; }
+  section#learn h2, section#learn h3, section#learn h4, section#learn h5, section#learn a {
+    color: #fff; }
+  section#learn header {
+    padding-bottom: 5vh; }
+  section#learn p {
+    margin: 2vh auto; }
+  section#learn a {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center; }
+
+section#latest .left-align {
+  text-align: left; }
+  section#latest .left-align > * {
+    margin: 2vh auto; }
+  section#latest .left-align i {
+    display: inline-block;
+    font-size: 3em;
+    border: 3px solid #000;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+    margin: 0;
+    border-radius: 50%;
+    color: #000; }
+  section#latest .left-align .align {
+    display: inline-block;
+    padding: 2vh; }
+  section#latest .left-align h5 {
+    text-transform: capitalize; }
+  section#latest .left-align a {
+    display: inline-block;
+    margin: 2vh auto;
+    text-transform: uppercase;
+    color: mediumseagreen;
+    font-weight: bold; }
+
+section#culture {
+  background-color: #eee; }
+  section#culture i {
+    display: inline-block;
+    font-size: 3em;
+    border: 3px solid #444;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+    margin: 0;
+    border-radius: 50%;
+    color: #444; }
+
+section#contact {
+  background-color: mediumseagreen;
+  color: white;
+  padding: 10vh; }
+  section#contact h3 {
+    color: white; }
+  section#contact a {
+    display: block;
+    width: 200px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 10px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 1em auto; }
+
+.box-little {
+  display: inline-block;
+  width: 25%;
+  margin: 3vh; }
+  .box-little > * {
+    margin-top: 2vh; }
+
+@media (max-width: 800px), handheld and (orientation: portrait) {
+  .box-little {
+    width: 40%; }
+
+  body > header {
+    display: block;
+    width: 100%;
+    text-align: center; }
+    body > header nav {
+      float: none; }
+      body > header nav ul {
+        padding-top: 2vh; } }
+@media (max-width: 600px), handheld and (orientation: portrait) {
+  .box-little {
+    width: 70%; }
+
+  h2 {
+    font-size: 2.2em; }
+
+  h3 {
+    font-size: 1.6em; }
+
+  section#latest .left-align, section#learn {
+    text-align: center;
+    margin: 0 auto; } }
+
+/*# sourceMappingURL=main.css.map */
